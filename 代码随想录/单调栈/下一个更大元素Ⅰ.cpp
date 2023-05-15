@@ -1,6 +1,9 @@
 //
 // Created by admin on 2023/5/12.
-//
+//还是按照单调栈套路，主要是对nums2进行单调栈，并将nums1值和索引放入哈希表中，最后按照哈希表来找到nums1中的值在nums2中对应值的右边最大值，索引仍按照nums1。
+//Tips：
+//  - 在循环里，需要判断nums1的值是不是在nums2中存在，存在的话就可以存结果
+//  - 需要先将nums1的值和索引放入哈希表，值为key；
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {

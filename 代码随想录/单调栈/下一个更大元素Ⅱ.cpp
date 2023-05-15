@@ -1,6 +1,7 @@
 //
 // Created by admin on 2023/5/12.
-//
+//相当于一个循环数组的问题，选择将两个nums拼接，索引按照对原数组长度取余计算。
+//其他的与每日温度一样。
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
