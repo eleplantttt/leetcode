@@ -8,6 +8,8 @@
 //1. 已经选择的元素个数：path.size();
 //2. 还需要的元素个数为: k - path.size();
 //3. 在集合n中至多要从该起始位置 : n - (k - path.size()) + 1，开始遍历
+//- 时间复杂度: O(n * 2^n)
+//- 空间复杂度: O(n)
 class Solution {
 private:
     vector<vector<int>> res;
