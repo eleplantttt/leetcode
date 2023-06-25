@@ -11,15 +11,15 @@
 - A的左子树里面藏着B结构（不一定是A的左子树节点为头的）
 - B的右子树里面藏着B结构（不一定是A的右子树节点为头的）
  */
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+
+// Definition for a binary tree node.
+ struct TreeNode {
+     int val;
+     TreeNode *left;
+     TreeNode *right;
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
+
 class Solution {
 private:
     bool recur (TreeNode* A, TreeNode* B) {
